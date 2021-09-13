@@ -13,11 +13,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
         android:key="charging"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/smart_charging_main_title">
 
         <SwitchPreference
             android:key="smart_charging"
             android:icon="@drawable/ic_charging_main"
+            android:layout="@layout/dot_preference_category"
             android:summary="@string/smart_charging_summary"
             android:title="@string/smart_charging_title" />
 
@@ -28,13 +30,14 @@
             android:dialogTitle="Select Charging Speed"
             android:entries="@array/charging_speed_entries"
             android:entryValues="@array/charging_speed_values"
+            android:layout="@layout/dot_preference_category"
             android:defaultValue="0"
             android:summary="%s" />
 
         <com.realmeparts.SeekBarPreference
             android:key="seek_bar"
             android:title="Select charging limit"
-            android:layout="@layout/preference_slider"
+            android:layout="@layout/dot_preference_category"
             android:defaultValue="95"
             android:max="100"
             android:min="80"
@@ -44,18 +47,21 @@
         <SwitchPreference
             android:key="reset_stats"
             android:icon="@drawable/ic_info_outline_24dp"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/reset_stats_title"
             android:summary="@string/reset_stats_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="perf"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/perf_title">
 
         <com.realmeparts.SecureSettingListPreference
             android:icon="@drawable/ic_perf_profile"
             android:key="perf_profile"
             android:dialogTitle="@string/perf_profile_title"
+            android:layout="@layout/dot_preference_category"
             android:entries="@array/perf_profiles"
             android:entryValues="@array/perf_profile_values"
             android:defaultValue="0"
@@ -72,6 +78,7 @@
             android:dialogTitle="@string/cabc_dialogTitle"
             android:entries="@array/cabc_profiles"
             android:entryValues="@array/cabc_values"
+            android:layout="@layout/dot_preference_category"
             android:defaultValue="0"
             android:title="@string/cabc_title" />
 
@@ -79,28 +86,33 @@
             android:icon="@drawable/dc_mode_icon"
             android:key="dc"
             android:summary="@string/dc_mode_summary"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/dc_mode_title" />
 
         <SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm"
             android:summary="@string/hbm_mode_summary"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/hbm_mode_title" />
 
         <SwitchPreference
             android:icon="@drawable/srgb_mode_icon"
             android:key="srgb"
             android:summary="@string/srgb_mode_summary"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/srgb_mode_title" />
 
         <SwitchPreference
             android:key="dt2w"
             android:icon="@drawable/ic_dt2w"
             android:summary="@string/dt2w_summary"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/dt2w_title" />
 
         <Preference
             android:key="doze"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/ambient_display_gestures_title"
             android:summary="@string/ambient_display_gestures_summary">
             <intent android:action="android.intent.action.MAIN"
@@ -112,11 +124,13 @@
 
     <PreferenceCategory
         android:key="refresh_rate"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/refresh_title">
 
         <com.realmeparts.RadioButtonPreference
             android:icon="@drawable/refresh_rate_60_icon"
             android:key="refresh_rate_60"
+            android:layout="@layout/dot_preference_category"
             android:checked="false"
             android:title="@string/refresh_rate_60_title"
             android:summary="@string/refresh_rate_60_summary" />
@@ -124,6 +138,7 @@
         <com.realmeparts.RadioButtonPreference
             android:icon="@drawable/refresh_rate_90_icon"
             android:key="refresh_rate_90"
+            android:layout="@layout/dot_preference_category"
             android:checked="true"
             android:enabled="true"
             android:title="@string/refresh_rate_90_title"
@@ -132,6 +147,7 @@
         <SwitchPreference
             android:key="refresh_rate_90Forced"
             android:icon="@drawable/refresh_rate_90forced_icon"
+            android:layout="@layout/dot_preference_category"
             android:summary="@string/refresh_rate_90Forced_summary"
             android:title="@string/refresh_rate_90Forced_title" />
 
@@ -139,17 +155,20 @@
 
     <PreferenceCategory
         android:key="misc"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/misc_title">
 
         <SwitchPreference
             android:icon="@drawable/usb_otg_icon"
             android:key="otg"
+            android:layout="@layout/dot_preference_category"
             android:summary="@string/otg_mode_summary"
             android:title="@string/otg_mode_title" />
 
         <SwitchPreference
             android:icon="@drawable/fps_info_icon"
             android:key="fps_info"
+            android:layout="@layout/dot_preference_category"
             android:title="@string/fps_info_title"
             android:summary="@string/fps_info_summary"
             android:persistent="true" />

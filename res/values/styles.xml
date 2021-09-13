@@ -11,5 +11,9 @@
     limitations under the License.
 -->
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Settings" />
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">true</item>
+        <item name="android:layout">@layout/dot_preference_category</item>
+    </style>
 </resources>
